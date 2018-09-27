@@ -1,0 +1,42 @@
+<html>
+
+<body>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="default.css">
+  <script id="douban-card" type="text/template">
+    <div class="db-profile-card member">
+      <div class="upper">
+        <a class="avatar-link" href="https://www.zhihu.com/people/{domain}">
+          <img class="Avatar Avatar--xs" src="{avatar}">
+          <span class="name">{name}{suffix}</span>
+        </a>
+        <!--<i class="icon icon-profile-male"></i>-->
+        <div class="tagline">{signature}</div>
+      </div>
+      <div class="lower clearfix">
+        <div class="meta">
+          <a class="item" href="{key1_url}">
+            <span class="value">{key1_data}</span>
+            <span class="key">{key1}</span>
+          </a>
+          <a class="item" href="{key2_url}">
+            <span class="value">{key2_data}</span>
+            <span class="key">{key2}</span>
+          </a>
+          <a class="item" href={key3_url}>
+            <span class="value">{key3_data}</span>
+            <span class="key">{key3}</span>
+          </a>
+        </div>
+        <div class="operation">
+          <a class="button zg-btn zg-btn-follow zm-rich-follow-btn" href="https://www.douban.com/people/{domain}">关注</a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </script>
+  <!-- remove this when building -->
+  <script src="../card.js" charset="utf-8"></script>
+</body>
+
+</html>
